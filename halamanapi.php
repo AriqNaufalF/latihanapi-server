@@ -1,13 +1,13 @@
 <?php
 require 'koneksi.php';
 session_start();
- 
+
 // check apakah session email sudah ada atau belum.
 // jika belum maka akan diredirect ke halaman index (login)
-if( empty($_SESSION['uname']) ){
+if (empty($_SESSION['uname'])) {
     header('Location: login.html');
 }
- 
+
 ?>
 
 <!doctype html>
@@ -26,8 +26,7 @@ if( empty($_SESSION['uname']) ){
 
     <title>Latihan API - Server</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -74,8 +73,7 @@ if( empty($_SESSION['uname']) ){
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#" style="background-color:#212529">LATIHAN API - WEB
         COEDOTZ</a>
 
-    <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 </header>
@@ -92,10 +90,10 @@ if( empty($_SESSION['uname']) ){
                     </li>
                     <br>
                     <li class="nav-item">
-                        <p><strong>NAMA KALIAN</strong></p>
+                        <p><strong>Ariq Naufal Fadhlurrahman</strong></p>
                     </li>
                     <li class="nav-item">
-                        <p>NIM KALIAN</p>
+                        <p>6706213016</p>
                     </li>
                     </li>
                 </ul>
@@ -130,12 +128,11 @@ if( empty($_SESSION['uname']) ){
         <!-- Data -->
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <div
-                class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2"> Data API </h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
-        
-                    
+
+
                 </div>
             </div>
 
@@ -164,11 +161,8 @@ if( empty($_SESSION['uname']) ){
                             <p class="text-start">API Data</p>
 
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control"
-                                    value="http://localhost/latihanapi-server/data-api.php"
-                                    id="myInputArtikel" readonly="readonly">
-                                <button class="btn btn-outline-success" type="button"
-                                    onclick="myApiArtikel()">Salin</button>
+                                <input type="text" class="form-control" value="http://localhost/latihanapi-server/data-api.php" id="myInputArtikel" readonly="readonly">
+                                <button class="btn btn-outline-success" type="button" onclick="myApiArtikel()">Salin</button>
                             </div>
 
                             <!-- function untuk copy text -->
@@ -207,15 +201,9 @@ if( empty($_SESSION['uname']) ){
 
 
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf "
-    crossorigin="anonymous "></script>
-<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
-    integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
-    integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
-    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
 <script src="dashboard.js"></script>
 </body>
 

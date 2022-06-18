@@ -1,10 +1,10 @@
 <?php
 
 // membutuhkan pemanggilan akses koneksi (mysql)
-// (DISI)
+require 'koneksi.php';
 
 // menjalankan sessions
-// (DISI)
+session_start();
 
 // check apakah session email sudah ada atau belum.
 // jika belum maka akan diredirect ke halaman index (login)
@@ -95,10 +95,10 @@ if (empty($_SESSION['uname'])) {
                     </li>
                     <br>
                     <li class="nav-item">
-                        <p><strong>NAMA KALIAN</strong></p>
+                        <p><strong>Ariq Naufal Fadhlurrahman</strong></p>
                     </li>
                     <li class="nav-item">
-                        <p>NIM KALIAN</p>
+                        <p>6706213016</p>
                     </li>
                     </li>
                 </ul>
@@ -180,7 +180,7 @@ if (empty($_SESSION['uname'])) {
 
             <div class="table-responsive">
 
-            <!-- Membuat table untuk menampilkan data -->
+                <!-- Membuat table untuk menampilkan data -->
                 <table class="table table-striped table-sm">
                     <thead>
                         <tr>
@@ -215,7 +215,7 @@ if (empty($_SESSION['uname'])) {
                             $img = "http://localhost/latihanapi-server/img/" . $row['gambar']; // LOCAL
                             // HOSTING $img = "https://localhost/latihanapi-server/img/".$row['url_gambar'];
                         ?>
-                        <!-- isi dari row yang dipanggil berdasarkan kolomnya -->
+                            <!-- isi dari row yang dipanggil berdasarkan kolomnya -->
                             <tr>
                                 <td style="visibility: hidden;"><?php echo $row['id']; ?></td>
                                 <td> <img src='<?php echo $img ?>' height="50px" width="70px" /></td>

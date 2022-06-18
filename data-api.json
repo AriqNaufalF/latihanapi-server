@@ -1,0 +1,14 @@
+[
+    {
+        "id": "2",
+        "gambar": "http:\/\/localhost\/latihanapi-server\/img\/16062022100518snowleopard.jpeg",
+        "judul": "hello world",
+        "deskripsi": "kucing"
+    },
+    {
+        "id": "3",
+        "gambar": "http:\/\/localhost\/latihanapi-server\/img\/Screenshot 2022-06-02 200406.png",
+        "judul": "test 2",
+        "deskripsi": "askdfjalsdjf"
+    }
+]
